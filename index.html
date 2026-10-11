@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#140d1b" />
+<title>For Pathu 💗</title>
+<style>
+:root{--pink:#ff9ecb;--rose:#ff5fa2;--cream:#fff1e8;--ink:#140d1b;--muted:#d9c9d8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--cream);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 20% 15%,#6d315c66,transparent 28%),radial-gradient(circle at 85% 70%,#3d477966,transparent 32%);z-index:-2}
+#stars{position:fixed;inset:0;pointer-events:none;z-index:-1}
+.star{position:absolute;width:2px;height:2px;background:#fff4fb;border-radius:50%;opacity:.6;animation:twinkle 3s infinite ease-in-out alternate}
+@keyframes twinkle{to{opacity:.15;transform:scale(.6)}}
+header{min-height:100svh;display:grid;place-items:center;text-align:center;padding:32px 20px;position:relative}
+.eyebrow{letter-spacing:.24em;text-transform:uppercase;font:11px Arial,sans-serif;color:var(--pink)}
+h1{font-size:clamp(3rem,12vw,6.7rem);font-weight:normal;line-height:.95;margin:22px 0;color:#fff3f8}
+h1 span{font-style:italic;color:var(--pink)}
+.lead{max-width:520px;margin:0 auto 28px;color:var(--muted);font-size:clamp(1rem,3.6vw,1.25rem);line-height:1.7}
+button,.button{border:1px solid #ff9ecb99;border-radius:999px;padding:14px 23px;background:#ff9ecb16;color:#fff4fa;font:14px Arial,sans-serif;cursor:pointer;text-decoration:none;display:inline-block;transition:.25s}
+button:hover,.button:hover{background:#ff9ecb32;transform:translateY(-2px)}
+.heart{display:block;color:var(--rose);font-size:25px;margin-top:28px;animation:pulse 1.6s infinite}
+@keyframes pulse{50%{transform:scale(1.18)}}
+section{padding:76px 20px;max-width:1000px;margin:auto}
+.section-label{font:11px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--pink)}
+h2{font-weight:normal;font-size:clamp(2rem,7vw,3.6rem);margin:12px 0 16px}
+.intro{max-width:650px;color:var(--muted);line-height:1.8}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
+.card{border:1px solid #ffcae51e;background:linear-gradient(145deg,#ffffff0b,#ff9ecb0a);border-radius:18px;padding:24px;min-height:170px}
+.card h3{font-weight:normal;color:var(--pink);font-size:1.45rem;margin:0 0 12px}
+.card p{color:var(--muted);line-height:1.7;margin:0}
+.photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:14px;margin-top:28px}
+.photo{aspect-ratio:4/5;border:1px dashed #ff9ecb70;border-radius:12px;display:grid;place-items:center;text-align:center;padding:15px;color:#d8afc8;background:linear-gradient(145deg,#ff9ecb10,#ffffff04);font:13px Arial,sans-serif;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.letter-wrap{margin-top:28px;border-radius:20px;padding:clamp(22px,5vw,42px);background:#fff1e808;border:1px solid #ff9ecb36}
+.letter-wrap p{font-size:1.1rem;line-height:1.9;color:#f1dfe9;white-space:pre-line}
+.letter-wrap .signature{color:var(--pink);font-style:italic;font-size:1.4rem}
+.letter-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:25px}
+.letter-list button{width:100%;text-align:left;border-radius:14px;padding:18px}
+.hidden-letter{display:none;margin-top:14px;padding:20px;border-left:2px solid var(--pink);background:#ff9ecb0b;color:var(--muted);line-height:1.8;border-radius:0 12px 12px 0}
+.hidden-letter.show{display:block;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+footer{text-align:center;padding:55px 20px 75px;color:var(--muted);line-height:1.8}
+footer strong{color:var(--pink);font-weight:normal}
+.small{font:12px Arial,sans-serif;color:#bca8ba}
+@media(max-width:480px){section{padding-top:58px;padding-bottom:58px}.card{min-height:auto}}
+</style>
+</head>
+<body>
+<div id="stars" aria-hidden="true"></div>
+<header id="home">
+  <div>
+    <div class="eyebrow">a little universe, made for you</div>
+    <h1>For my <span>Pathu</span> 💗</h1>
+    <p class="lead">Prarthana, this little corner of the internet is just for you.<br>Every page holds a tiny piece of what you mean to me.</p>
+    <button onclick="document.querySelector('#story').scrollIntoView({behavior:'smooth'})">Open your surprise 💌</button>
+    <span class="heart">♡</span>
+  </div>
+</header>
+
+<section id="story">
+  <div class="section-label">chapter one · us</div>
+  <h2>Our little story</h2>
+  <p class="intro">Some people become important so quietly that one day you look back and realise they've become part of all your favourite things. This is where our story belongs. Replace this paragraph with how you first met, how things began, or the moment you realised she was special to you.</p>
+  <div class="cards">
+    <article class="card"><h3>Where it began</h3><p>Add how you first met and what you remember most about those early days.</p></article>
+    <article class="card"><h3>A moment I keep</h3><p>Add a memory that still makes you smile whenever it comes back to you.</p></article>
+    <article class="card"><h3>My favourite feeling</h3><p>Write about a small, ordinary moment with her that means more than it seems.</p></article>
+  </div>
+</section>
+
+<section id="memories">
+  <div class="section-label">chapter two · snapshots</div>
+  <h2>Little pieces of us</h2>
+  <p class="intro">These spaces are waiting for your favourite photos. Keep them private and meaningful—moments that tell your story better than any caption can.</p>
+  <div class="photo-grid">
+    <div class="photo">Photo 1<br>Replace with your picture</div>
+    <div class="photo">Photo 2<br>Replace with your picture</div>
+    <div class="photo">Photo 3<br>Replace with your picture</div>
+    <div class="photo">Photo 4<br>Replace with your picture</div>
+  </div>
+  <p class="small">Tip: add photos in the folder and follow the README instructions to display them here.</p>
+</section>
+
+<section id="things">
+  <div class="section-label">chapter three · the details</div>
+  <h2>Things I adore about you</h2>
+  <div class="cards">
+    <article class="card"><h3>Your little ways</h3><p>Write one tiny habit or expression of hers that you find uniquely her.</p></article>
+    <article class="card"><h3>Your heart</h3><p>Write about a way she cares, listens, or makes people feel understood.</p></article>
+    <article class="card"><h3>Simply you</h3><p>Write something you appreciate about who she is—not just what she does for you.</p></article>
+  </div>
+</section>
+
+<section id="letters">
+  <div class="section-label">chapter four · whenever you need me</div>
+  <h2>Open when… 💌</h2>
+  <p class="intro">Tap a little letter. You can edit each message in the code so every one sounds like you.</p>
+  <div class="letter-list">
+    <div><button onclick="toggleLetter('miss')">♡ Open when you miss me</button><div class="hidden-letter" id="miss">Even when we're not in the same place, I hope you remember that you matter to me. Think of one of our favourite memories, take a breath, and imagine me cheering you on. I'm grateful for you, Pathu. 💗</div></div>
+    <div><button onclick="toggleLetter('sad')">♡ Open when you have a hard day</button><div class="hidden-letter" id="sad">You don't have to be cheerful or have everything figured out all the time. I hope you give yourself the same kindness you give the people you love. I'm proud of you for getting through today, one step at a time. 🤍</div></div>
+    <div><button onclick="toggleLetter('smile')">♡ Open when you need a smile</button><div class="hidden-letter" id="smile">Emergency reminder: you're my Pathu, you're deeply appreciated, and somewhere out there is a person who is probably smiling just thinking about you. That person is me. Okay, go smile now. 🌷</div></div>
+    <div><button onclick="toggleLetter('birthday')">♡ Open on your birthday</button><div class="hidden-letter" id="birthday">Happy birthday, my Pathu! I hope this new year of your life brings you gentle days, brave dreams, real laughter, and so many reasons to feel loved. You deserve beautiful things—not just today, but on all the ordinary days too. 🎂💗</div></div>
+  </div>
+</section>
+
+<section id="future">
+  <div class="section-label">chapter five · someday</div>
+  <h2>More memories to come</h2>
+  <p class="intro">More places to see, songs to share, silly moments to laugh about, and ordinary days that become special just because we lived them. I hope we keep choosing honesty, patience, care, and each other as we grow.</p>
+</section>
+
+<section id="final">
+  <div class="section-label">one last thing</div>
+  <h2>Happy birthday, Prarthana. 💗</h2>
+  <div class="letter-wrap">
+    <p>My Pathu,
+
+This little website could never fit everything I want to say, but I made it because I wanted you to have something you can come back to—a tiny reminder of how special you are to me.
+
+Thank you for being you. I hope this year brings you happiness, peace, confidence, and moments that make your heart feel full. You deserve to feel cared for and appreciated, today and every day.
+
+I'm so glad our paths crossed. Here's to your birthday, to the memories we've made, and to all the lovely ones still waiting for us.
+
+Happy birthday, my favourite girl. 💗</p>
+    <p class="signature">Always cheering for you, ♡</p>
+    <p class="small">Replace or personalize this letter so it sounds like your own words.</p>
+  </div>
+</section>
+
+<footer>
+  <div>Made with love, just for <strong>Pathu</strong> ♡</div>
+  <div class="small">A little reminder that you are loved, celebrated, and appreciated.</div>
+</footer>
+<script>
+const stars=document.getElementById('stars');
+for(let i=0;i<90;i++){const s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=(Math.random()*3)+'s';s.style.opacity=(Math.random()*.65+.15).toFixed(2);stars.appendChild(s)}
+function toggleLetter(id){document.getElementById(id).classList.toggle('show')}
+</script>
+</body>
+</html>
